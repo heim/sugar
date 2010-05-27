@@ -14,7 +14,7 @@ public class SyntaxTest {
 
        then(val).should.be(true);
 
-       and(val).should_not.either.be(true);
+       and(val).should_not.be(false);
 
 
     }
