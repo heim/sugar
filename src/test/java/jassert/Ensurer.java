@@ -2,8 +2,11 @@ package jassert;
 
 public class Ensurer {
 
-    public static jAssertMatcher ensure(Object val) {
-        Class c = val.getClass();
-        return new jAssertMatcher<>(val);
+    public static <T> jAssertMatcher then(T val) {
+        return new jAssertMatcher<T>(val);
+    }
+
+    public static <T> jAssertMatcher and(T val) {
+        return new jAssertMatcher<T>(val);
     }
 }

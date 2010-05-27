@@ -2,6 +2,9 @@ package jassert;
 
 import org.junit.Test;
 
+import static jassert.Ensurer.and;
+import static jassert.Ensurer.then;
+
 
 public class SyntaxTest {
 
@@ -9,10 +12,15 @@ public class SyntaxTest {
     public void testEnsureTrue() {
         boolean val = true;
 
-       ensure(val).is(true);
+       then(val).should.be(false);
+
+       and(val).should_not.be(false);
 
 
     }
+
+
+    
 
 
 }
