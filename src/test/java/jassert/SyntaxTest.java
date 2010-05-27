@@ -12,9 +12,9 @@ public class SyntaxTest {
     public void testEnsureTrue() {
         boolean val = true;
 
-       then(val).should.be(false);
+       then(val).should.be(true);
 
-       and(val).should_not.be(false);
+       and(val).should_not.either.be(true);
 
 
     }

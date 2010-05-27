@@ -10,6 +10,8 @@ public class ShouldNot<T> {
     private T actual;
 
 
+    public ShouldNot<T> also = this;
+    public ShouldNot<T> either = this;
     
     public void be(T expected) {
         assertThat(expected, not(equalTo(actual)));

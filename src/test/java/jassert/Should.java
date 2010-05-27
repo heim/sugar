@@ -5,6 +5,8 @@ import static junit.framework.Assert.assertEquals;
 public class Should<T> {
     private T actual;
 
+    public Should<T> also = this;
+
     public <T> void be(T expected) {
         assertEquals("values should be equal", expected, actual);
     }
