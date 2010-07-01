@@ -1,26 +1,17 @@
 package sugar.should;
 
 
-import static junit.framework.Assert.*;
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.core.IsNot.not;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
 
-public class GenericShouldNot<A>  {
-    private A actual;
-    private boolean invert = false;
-
-
-    public GenericShouldNot<A> also = this;
-    public GenericShouldNot<A> either = this;
-
-
-    public void be(A expected) {
-        assertThat(expected, not(equalTo(actual)));
+public class GenericShouldNot<A> extends GenericShould<A>  {
+    @Override
+    public <A> void be(A expected) {
+        if(expected != null) {
+            assertFalse(expected.equals(actual));
+        } else {
+            if(actual == null) {
+                fail("should not be equal");    
+            }
+        }
     }
-
-    public void setActual(A actual) {
-        this.actual = actual;
-    }
-
 }
