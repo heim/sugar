@@ -10,9 +10,9 @@
     <url>http://github.com/heim/sugar</url>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:heim/sugar.git</developerConnection>
-        <connection>scm:git:git@github.com:heim/sugar.git</connection>
-        <url>https://github.com/heim/sugar</url>
+        <developerConnection>scm:git:git://github.com/heim/sugar.git</developerConnection>
+        <connection>scm:git:git://github.com/heim/sugar.git</connection>
+        <url>http://github.com/heim/sugar</url>
     </scm>
 
     <build>
