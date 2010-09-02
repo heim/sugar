@@ -4,7 +4,7 @@
     <groupId>sugar</groupId>
     <artifactId>sugar</artifactId>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <name>sugar assertion framework</name>
     <url>http://github.com/heim/sugar</url>
 
